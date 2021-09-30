@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"trc\startup_stm32f103xe.o"
+"trc\main.o"
+"trc\gpio.o"
+"trc\tim.o"
+"trc\usart.o"
+"trc\stm32f1xx_it.o"
+"trc\stm32f1xx_hal_msp.o"
+"trc\stm32f1xx_hal_gpio_ex.o"
+"trc\stm32f1xx_hal_tim.o"
+"trc\stm32f1xx_hal_tim_ex.o"
+"trc\stm32f1xx_hal.o"
+"trc\stm32f1xx_hal_rcc.o"
+"trc\stm32f1xx_hal_rcc_ex.o"
+"trc\stm32f1xx_hal_gpio.o"
+"trc\stm32f1xx_hal_dma.o"
+"trc\stm32f1xx_hal_cortex.o"
+"trc\stm32f1xx_hal_pwr.o"
+"trc\stm32f1xx_hal_flash.o"
+"trc\stm32f1xx_hal_flash_ex.o"
+"trc\stm32f1xx_hal_exti.o"
+"trc\stm32f1xx_hal_uart.o"
+"trc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Trc\Trc.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Trc.map" -o Trc\Trc.axf

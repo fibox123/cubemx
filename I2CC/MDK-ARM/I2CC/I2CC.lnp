@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"i2cc\startup_stm32f103xe.o"
+"i2cc\main.o"
+"i2cc\gpio.o"
+"i2cc\i2c.o"
+"i2cc\usart.o"
+"i2cc\stm32f1xx_it.o"
+"i2cc\stm32f1xx_hal_msp.o"
+"i2cc\stm32f1xx_hal_gpio_ex.o"
+"i2cc\stm32f1xx_hal_i2c.o"
+"i2cc\stm32f1xx_hal.o"
+"i2cc\stm32f1xx_hal_rcc.o"
+"i2cc\stm32f1xx_hal_rcc_ex.o"
+"i2cc\stm32f1xx_hal_gpio.o"
+"i2cc\stm32f1xx_hal_dma.o"
+"i2cc\stm32f1xx_hal_cortex.o"
+"i2cc\stm32f1xx_hal_pwr.o"
+"i2cc\stm32f1xx_hal_flash.o"
+"i2cc\stm32f1xx_hal_flash_ex.o"
+"i2cc\stm32f1xx_hal_exti.o"
+"i2cc\stm32f1xx_hal_tim.o"
+"i2cc\stm32f1xx_hal_tim_ex.o"
+"i2cc\stm32f1xx_hal_uart.o"
+"i2cc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "I2CC\I2CC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "I2CC.map" -o I2CC\I2CC.axf

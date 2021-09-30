@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include
+-I C:\Users\HP\Desktop\CubeMx\UAR\MDK-ARM\RTE
+-I E:\keil\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+-I E:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE
+-o uar\main.o --omf_browse uar\main.crf --depend uar\main.d "../Core/Src/main.c"

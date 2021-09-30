@@ -1,0 +1,17 @@
+*** Using Compiler 'V5.06 (build 20)', folder: 'E:\keil\ARM\ARMCC\Bin'
+Build target 'led+aj'
+compiling main.c...
+../Core/Src/main.c(115): error:  #65: expected a ";"
+  {
+../Core/Src/main.c(136): warning:  #12-D: parsing restarts here after previous syntax error
+                                |
+CC_CLOCKTYPE_PCLK1|
+CC_CLOCKTYPE_PCLK2;
+../Core/Src/main.c(137): warning:  #111-D: statement is unreachable
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Core/Src/main.c(137): error:  #20: identifier "RCC_ClkInitStruct" is undefined
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Core/Src/main.c: 2 warnings, 2 errors
+"led+aj\led+aj.axf" - 2 Error(s), 2 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01

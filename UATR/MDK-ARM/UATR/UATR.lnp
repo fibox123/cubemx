@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"uatr\startup_stm32f103xe.o"
+"uatr\main.o"
+"uatr\gpio.o"
+"uatr\usart.o"
+"uatr\stm32f1xx_it.o"
+"uatr\stm32f1xx_hal_msp.o"
+"uatr\stm32f1xx_hal_gpio_ex.o"
+"uatr\stm32f1xx_hal_tim.o"
+"uatr\stm32f1xx_hal_tim_ex.o"
+"uatr\stm32f1xx_hal_uart.o"
+"uatr\stm32f1xx_hal.o"
+"uatr\stm32f1xx_hal_rcc.o"
+"uatr\stm32f1xx_hal_rcc_ex.o"
+"uatr\stm32f1xx_hal_gpio.o"
+"uatr\stm32f1xx_hal_dma.o"
+"uatr\stm32f1xx_hal_cortex.o"
+"uatr\stm32f1xx_hal_pwr.o"
+"uatr\stm32f1xx_hal_flash.o"
+"uatr\stm32f1xx_hal_flash_ex.o"
+"uatr\stm32f1xx_hal_exti.o"
+"uatr\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "UATR\UATR.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UATR.map" -o UATR\UATR.axf

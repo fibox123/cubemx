@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"exti1\startup_stm32f103xe.o"
+"exti1\main.o"
+"exti1\gpio.o"
+"exti1\stm32f1xx_it.o"
+"exti1\stm32f1xx_hal_msp.o"
+"exti1\stm32f1xx_hal_gpio_ex.o"
+"exti1\stm32f1xx_hal_tim.o"
+"exti1\stm32f1xx_hal_tim_ex.o"
+"exti1\stm32f1xx_hal.o"
+"exti1\stm32f1xx_hal_rcc.o"
+"exti1\stm32f1xx_hal_rcc_ex.o"
+"exti1\stm32f1xx_hal_gpio.o"
+"exti1\stm32f1xx_hal_dma.o"
+"exti1\stm32f1xx_hal_cortex.o"
+"exti1\stm32f1xx_hal_pwr.o"
+"exti1\stm32f1xx_hal_flash.o"
+"exti1\stm32f1xx_hal_flash_ex.o"
+"exti1\stm32f1xx_hal_exti.o"
+"exti1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "EXTI1\EXTI1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXTI1.map" -o EXTI1\EXTI1.axf
