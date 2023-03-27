@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"uar2\startup_stm32f103xe.o"
+"uar2\main.o"
+"uar2\gpio.o"
+"uar2\usart.o"
+"uar2\stm32f1xx_it.o"
+"uar2\stm32f1xx_hal_msp.o"
+"uar2\stm32f1xx_hal_gpio_ex.o"
+"uar2\stm32f1xx_hal_tim.o"
+"uar2\stm32f1xx_hal_tim_ex.o"
+"uar2\stm32f1xx_hal_uart.o"
+"uar2\stm32f1xx_hal.o"
+"uar2\stm32f1xx_hal_rcc.o"
+"uar2\stm32f1xx_hal_rcc_ex.o"
+"uar2\stm32f1xx_hal_gpio.o"
+"uar2\stm32f1xx_hal_dma.o"
+"uar2\stm32f1xx_hal_cortex.o"
+"uar2\stm32f1xx_hal_pwr.o"
+"uar2\stm32f1xx_hal_flash.o"
+"uar2\stm32f1xx_hal_flash_ex.o"
+"uar2\stm32f1xx_hal_exti.o"
+"uar2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "UAR2\UAR2.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UAR2.map" -o UAR2\UAR2.axf

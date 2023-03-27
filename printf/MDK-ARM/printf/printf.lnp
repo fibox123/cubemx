@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"printf\startup_stm32f407xx.o"
+"printf\main.o"
+"printf\gpio.o"
+"printf\usart.o"
+"printf\stm32f4xx_it.o"
+"printf\stm32f4xx_hal_msp.o"
+"printf\stm32f4xx_hal_tim.o"
+"printf\stm32f4xx_hal_tim_ex.o"
+"printf\stm32f4xx_hal_uart.o"
+"printf\stm32f4xx_hal_rcc.o"
+"printf\stm32f4xx_hal_rcc_ex.o"
+"printf\stm32f4xx_hal_flash.o"
+"printf\stm32f4xx_hal_flash_ex.o"
+"printf\stm32f4xx_hal_flash_ramfunc.o"
+"printf\stm32f4xx_hal_gpio.o"
+"printf\stm32f4xx_hal_dma_ex.o"
+"printf\stm32f4xx_hal_dma.o"
+"printf\stm32f4xx_hal_pwr.o"
+"printf\stm32f4xx_hal_pwr_ex.o"
+"printf\stm32f4xx_hal_cortex.o"
+"printf\stm32f4xx_hal.o"
+"printf\stm32f4xx_hal_exti.o"
+"printf\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "printf\printf.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "printf.map" -o printf\printf.axf

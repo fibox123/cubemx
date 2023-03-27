@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"bh2\startup_stm32f103xe.o"
+"bh2\main.o"
+"bh2\gpio.o"
+"bh2\tim.o"
+"bh2\usart.o"
+"bh2\stm32f1xx_it.o"
+"bh2\stm32f1xx_hal_msp.o"
+"bh2\stm32f1xx_hal_gpio_ex.o"
+"bh2\stm32f1xx_hal_tim.o"
+"bh2\stm32f1xx_hal_tim_ex.o"
+"bh2\stm32f1xx_hal.o"
+"bh2\stm32f1xx_hal_rcc.o"
+"bh2\stm32f1xx_hal_rcc_ex.o"
+"bh2\stm32f1xx_hal_gpio.o"
+"bh2\stm32f1xx_hal_dma.o"
+"bh2\stm32f1xx_hal_cortex.o"
+"bh2\stm32f1xx_hal_pwr.o"
+"bh2\stm32f1xx_hal_flash.o"
+"bh2\stm32f1xx_hal_flash_ex.o"
+"bh2\stm32f1xx_hal_exti.o"
+"bh2\stm32f1xx_hal_uart.o"
+"bh2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "BH2\BH2.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BH2.map" -o BH2\BH2.axf

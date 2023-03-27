@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "bno.h": "c",
+        "pid.h": "c",
+        "main.h": "c"
+    }
+}

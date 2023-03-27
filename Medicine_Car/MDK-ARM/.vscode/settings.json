@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "move.h": "c",
+        "pid.h": "c"
+    }
+}

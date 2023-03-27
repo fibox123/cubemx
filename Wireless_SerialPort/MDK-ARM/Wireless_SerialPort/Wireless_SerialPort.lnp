@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"wireless_serialport\startup_stm32f407xx.o"
+"wireless_serialport\main.o"
+"wireless_serialport\gpio.o"
+"wireless_serialport\usart.o"
+"wireless_serialport\stm32f4xx_it.o"
+"wireless_serialport\stm32f4xx_hal_msp.o"
+"wireless_serialport\stm32f4xx_hal_tim.o"
+"wireless_serialport\stm32f4xx_hal_tim_ex.o"
+"wireless_serialport\stm32f4xx_hal_uart.o"
+"wireless_serialport\stm32f4xx_hal_rcc.o"
+"wireless_serialport\stm32f4xx_hal_rcc_ex.o"
+"wireless_serialport\stm32f4xx_hal_flash.o"
+"wireless_serialport\stm32f4xx_hal_flash_ex.o"
+"wireless_serialport\stm32f4xx_hal_flash_ramfunc.o"
+"wireless_serialport\stm32f4xx_hal_gpio.o"
+"wireless_serialport\stm32f4xx_hal_dma_ex.o"
+"wireless_serialport\stm32f4xx_hal_dma.o"
+"wireless_serialport\stm32f4xx_hal_pwr.o"
+"wireless_serialport\stm32f4xx_hal_pwr_ex.o"
+"wireless_serialport\stm32f4xx_hal_cortex.o"
+"wireless_serialport\stm32f4xx_hal.o"
+"wireless_serialport\stm32f4xx_hal_exti.o"
+"wireless_serialport\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Wireless_SerialPort\Wireless_SerialPort.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Wireless_SerialPort.map" -o Wireless_SerialPort\Wireless_SerialPort.axf

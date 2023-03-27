@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"gy955_uart\startup_stm32f407xx.o"
+"gy955_uart\main.o"
+"gy955_uart\gpio.o"
+"gy955_uart\usart.o"
+"gy955_uart\stm32f4xx_it.o"
+"gy955_uart\stm32f4xx_hal_msp.o"
+"gy955_uart\stm32f4xx_hal_tim.o"
+"gy955_uart\stm32f4xx_hal_tim_ex.o"
+"gy955_uart\stm32f4xx_hal_uart.o"
+"gy955_uart\stm32f4xx_hal_rcc.o"
+"gy955_uart\stm32f4xx_hal_rcc_ex.o"
+"gy955_uart\stm32f4xx_hal_flash.o"
+"gy955_uart\stm32f4xx_hal_flash_ex.o"
+"gy955_uart\stm32f4xx_hal_flash_ramfunc.o"
+"gy955_uart\stm32f4xx_hal_gpio.o"
+"gy955_uart\stm32f4xx_hal_dma_ex.o"
+"gy955_uart\stm32f4xx_hal_dma.o"
+"gy955_uart\stm32f4xx_hal_pwr.o"
+"gy955_uart\stm32f4xx_hal_pwr_ex.o"
+"gy955_uart\stm32f4xx_hal_cortex.o"
+"gy955_uart\stm32f4xx_hal.o"
+"gy955_uart\stm32f4xx_hal_exti.o"
+"gy955_uart\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "GY955_UART\GY955_UART.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GY955_UART.map" -o GY955_UART\GY955_UART.axf

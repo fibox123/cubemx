@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"trackcar\startup_stm32f103xe.o"
+"trackcar\control.o"
+"trackcar\main.o"
+"trackcar\gpio.o"
+"trackcar\tim.o"
+"trackcar\usart.o"
+"trackcar\stm32f1xx_it.o"
+"trackcar\stm32f1xx_hal_msp.o"
+"trackcar\stm32f1xx_hal_gpio_ex.o"
+"trackcar\stm32f1xx_hal_tim.o"
+"trackcar\stm32f1xx_hal_tim_ex.o"
+"trackcar\stm32f1xx_hal.o"
+"trackcar\stm32f1xx_hal_rcc.o"
+"trackcar\stm32f1xx_hal_rcc_ex.o"
+"trackcar\stm32f1xx_hal_gpio.o"
+"trackcar\stm32f1xx_hal_dma.o"
+"trackcar\stm32f1xx_hal_cortex.o"
+"trackcar\stm32f1xx_hal_pwr.o"
+"trackcar\stm32f1xx_hal_flash.o"
+"trackcar\stm32f1xx_hal_flash_ex.o"
+"trackcar\stm32f1xx_hal_exti.o"
+"trackcar\stm32f1xx_hal_uart.o"
+"trackcar\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TrackCar\TrackCar.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TrackCar.map" -o TrackCar\TrackCar.axf
